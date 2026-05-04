@@ -1,0 +1,6 @@
+{
+  "name": "acesso_ii_itk",
+  "description": "Integração, consolidação e visualização de logs de acesso do DMP Access II via API externa",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
