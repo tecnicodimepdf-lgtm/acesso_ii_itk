@@ -2,51 +2,59 @@ import axios from 'axios';
 import axiosRetry from 'axios-retry';
 
 const getTimeout = () => parseInt(process.env.TIMEOUT || '10000', 10);
-const getBaseUrl = () => {
-  let url = process.env.BASE_URL || process.env.BASE_URL_API || 'https://dmpaccess.dimep-ams.com.br/itk';
-  if (!url.startsWith('http')) url = 'https://dmpaccess.dimep-ams.com.br/itk';
-  if (url.endsWith('/')) url = url.slice(0, -1);
-  if (!url.endsWith('/itk') && !url.includes('/itk/')) {
-    url = `${url}/itk`;
-  }
-  return url;
-};
-
-const isTokenExpired = (tokenStr: string) => {
+const getJwtPayload = (tokenStr: string): any => {
   try {
     const parts = tokenStr.split(' ');
     const jwt = parts.length > 1 ? parts[1] : parts[0];
     const payload = Buffer.from(jwt.split('.')[1], 'base64').toString();
-    const exp = JSON.parse(payload).exp * 1000;
-    return Date.now() > exp;
+    return JSON.parse(payload);
   } catch (e) {
-    return false;
+    return null;
   }
 };
 
+const isTokenExpired = (tokenStr: string) => {
+  const payload = getJwtPayload(tokenStr);
+  if (!payload || !payload.exp) return false;
+  return Date.now() > payload.exp * 1000;
+};
+
+const getBaseUrl = (tokenStr?: string) => {
+  let url = process.env.BASE_URL || process.env.BASE_URL_API || 'https://dmpaccess.dimep-ams.com.br';
+  if (url.endsWith('/')) url = url.slice(0, -1);
+
+  const urlObj = new URL(url.startsWith('http') ? url : `https://${url}`);
+  const hasPath = urlObj.pathname.length > 1;
+
+  if (hasPath) return url;
+
+  // O usuário solicitou explicitamente o prefixo /itk para a API
+  return `${url}/itk`;
+};
+
 const createClient = () => {
-  // O prompt especifica: Authorization: Bearer NAK {token} 
-  // Na .env: TOKEN=NAK eyJhb... ou DMP_TOKEN=NAK eyJ...
-  let tokenStr = process.env.TOKEN || process.env.DMP_TOKEN || '';
+  let tokenStr = process.env.DMP_ACCESS_TOKEN || process.env.TOKEN || process.env.DMP_TOKEN || '';
   
-  // Clean token - remove NAK prefix if present so that Microsoft's JWT middleware doesn't crash on IDX12709
-  if (tokenStr.startsWith('NAK')) {
-    tokenStr = tokenStr.replace('NAK', '').trim();
+  // Limpa o token - remove prefixos NAK ou Bearer se vierem do .env
+  if (tokenStr.toUpperCase().startsWith('NAK')) {
+    tokenStr = tokenStr.substring(3).trim();
+  }
+  // Also remove Bearer if it was doubled accidentally
+  if (tokenStr.toUpperCase().startsWith('BEARER')) {
+    tokenStr = tokenStr.substring(6).trim();
   }
 
   if (tokenStr && isTokenExpired(tokenStr)) {
     console.error('ALERTA: Token JWT configurado encontra-se expirado!');
   }
 
-  // A API requer Bearer {token} válido para não estourar IDX12709
-  const authHeader = `Bearer ${tokenStr}`;
-
   const client = axios.create({
-    baseURL: getBaseUrl(),
+    baseURL: getBaseUrl(tokenStr),
     timeout: getTimeout(),
     headers: {
-      'Authorization': authHeader,
+      'Authorization': `Bearer ${tokenStr}`,
       'Content-Type': 'application/json',
+      'Accept': 'application/json',
     }
   });
 
