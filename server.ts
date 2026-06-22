@@ -1,3 +1,4 @@
+import "./src/server/loadEnv.js";
 import express from "express";
 import { createServer as createViteServer } from "vite";
 import path from "path";

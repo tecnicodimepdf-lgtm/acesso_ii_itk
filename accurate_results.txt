@@ -1,0 +1,71 @@
+[ACCURATE TESTER] Starting tests with maxRedirects: 0 ...
+
+========================================
+Testing URL: https://dmpaccess.dimep-ams.com.br/api/v2/logon
+========================================
+
+========================================
+Testing URL: https://dmpaccess.dimep-ams.com.br/trk/ext/api/v2/logon
+========================================
+
+========================================
+Testing URL: https://dmpaccess.dimep-ams.com.br/itk/api/v2/logon
+========================================
+[DEBUG] Status 404 | Hash: Plain | Fields: username/password | Content-Type: application/json; charset=utf-8 | Body: {"Message":"No HTTP resource was found that matches the request URI 'https://dmpaccess.dimep-ams.com
+[DEBUG] Status 404 | Hash: Plain | Fields: Username/Password | Content-Type: application/json; charset=utf-8 | Body: {"Message":"No HTTP resource was found that matches the request URI 'https://dmpaccess.dimep-ams.com
+[DEBUG] Status 404 | Hash: Plain | Fields: usuario/senha | Content-Type: application/json; charset=utf-8 | Body: {"Message":"No HTTP resource was found that matches the request URI 'https://dmpaccess.dimep-ams.com
+[DEBUG] Status 404 | Hash: Plain | Fields: Usuario/Senha | Content-Type: application/json; charset=utf-8 | Body: {"Message":"No HTTP resource was found that matches the request URI 'https://dmpaccess.dimep-ams.com
+[DEBUG] Status 404 | Hash: Plain | Fields: login/senha | Content-Type: application/json; charset=utf-8 | Body: {"Message":"No HTTP resource was found that matches the request URI 'https://dmpaccess.dimep-ams.com
+[DEBUG] Status 404 | Hash: Plain | Fields: user/password | Content-Type: application/json; charset=utf-8 | Body: {"Message":"No HTTP resource was found that matches the request URI 'https://dmpaccess.dimep-ams.com
+[DEBUG] Status 404 | Hash: Plain | Fields: Login/Senha | Content-Type: application/json; charset=utf-8 | Body: {"Message":"No HTTP resource was found that matches the request URI 'https://dmpaccess.dimep-ams.com
+[DEBUG] Status 404 | Hash: MD5 Lower | Fields: username/password | Content-Type: application/json; charset=utf-8 | Body: {"Message":"No HTTP resource was found that matches the request URI 'https://dmpaccess.dimep-ams.com
+[DEBUG] Status 404 | Hash: MD5 Lower | Fields: Username/Password | Content-Type: application/json; charset=utf-8 | Body: {"Message":"No HTTP resource was found that matches the request URI 'https://dmpaccess.dimep-ams.com
+[DEBUG] Status 404 | Hash: MD5 Lower | Fields: usuario/senha | Content-Type: application/json; charset=utf-8 | Body: {"Message":"No HTTP resource was found that matches the request URI 'https://dmpaccess.dimep-ams.com
+[DEBUG] Status 404 | Hash: MD5 Lower | Fields: Usuario/Senha | Content-Type: application/json; charset=utf-8 | Body: {"Message":"No HTTP resource was found that matches the request URI 'https://dmpaccess.dimep-ams.com
+[DEBUG] Status 404 | Hash: MD5 Lower | Fields: login/senha | Content-Type: application/json; charset=utf-8 | Body: {"Message":"No HTTP resource was found that matches the request URI 'https://dmpaccess.dimep-ams.com
+[DEBUG] Status 404 | Hash: MD5 Lower | Fields: user/password | Content-Type: application/json; charset=utf-8 | Body: {"Message":"No HTTP resource was found that matches the request URI 'https://dmpaccess.dimep-ams.com
+[DEBUG] Status 404 | Hash: MD5 Lower | Fields: Login/Senha | Content-Type: application/json; charset=utf-8 | Body: {"Message":"No HTTP resource was found that matches the request URI 'https://dmpaccess.dimep-ams.com
+[DEBUG] Status 404 | Hash: MD5 Upper | Fields: username/password | Content-Type: application/json; charset=utf-8 | Body: {"Message":"No HTTP resource was found that matches the request URI 'https://dmpaccess.dimep-ams.com
+[DEBUG] Status 404 | Hash: MD5 Upper | Fields: Username/Password | Content-Type: application/json; charset=utf-8 | Body: {"Message":"No HTTP resource was found that matches the request URI 'https://dmpaccess.dimep-ams.com
+[DEBUG] Status 404 | Hash: MD5 Upper | Fields: usuario/senha | Content-Type: application/json; charset=utf-8 | Body: {"Message":"No HTTP resource was found that matches the request URI 'https://dmpaccess.dimep-ams.com
+[DEBUG] Status 404 | Hash: MD5 Upper | Fields: Usuario/Senha | Content-Type: application/json; charset=utf-8 | Body: {"Message":"No HTTP resource was found that matches the request URI 'https://dmpaccess.dimep-ams.com
+[DEBUG] Status 404 | Hash: MD5 Upper | Fields: login/senha | Content-Type: application/json; charset=utf-8 | Body: {"Message":"No HTTP resource was found that matches the request URI 'https://dmpaccess.dimep-ams.com
+[DEBUG] Status 404 | Hash: MD5 Upper | Fields: user/password | Content-Type: application/json; charset=utf-8 | Body: {"Message":"No HTTP resource was found that matches the request URI 'https://dmpaccess.dimep-ams.com
+[DEBUG] Status 404 | Hash: MD5 Upper | Fields: Login/Senha | Content-Type: application/json; charset=utf-8 | Body: {"Message":"No HTTP resource was found that matches the request URI 'https://dmpaccess.dimep-ams.com
+[DEBUG] Status 404 | Hash: SHA256 Lower | Fields: username/password | Content-Type: application/json; charset=utf-8 | Body: {"Message":"No HTTP resource was found that matches the request URI 'https://dmpaccess.dimep-ams.com
+[DEBUG] Status 404 | Hash: SHA256 Lower | Fields: Username/Password | Content-Type: application/json; charset=utf-8 | Body: {"Message":"No HTTP resource was found that matches the request URI 'https://dmpaccess.dimep-ams.com
+[DEBUG] Status 404 | Hash: SHA256 Lower | Fields: usuario/senha | Content-Type: application/json; charset=utf-8 | Body: {"Message":"No HTTP resource was found that matches the request URI 'https://dmpaccess.dimep-ams.com
+[DEBUG] Status 404 | Hash: SHA256 Lower | Fields: Usuario/Senha | Content-Type: application/json; charset=utf-8 | Body: {"Message":"No HTTP resource was found that matches the request URI 'https://dmpaccess.dimep-ams.com
+[NET ERROR] Hash: SHA256 Lower | Fields: login/senha | Error: timeout of 4000ms exceeded
+[NET ERROR] Hash: SHA256 Lower | Fields: user/password | Error: timeout of 4000ms exceeded
+[DEBUG] Status 404 | Hash: SHA256 Lower | Fields: Login/Senha | Content-Type: application/json; charset=utf-8 | Body: {"Message":"No HTTP resource was found that matches the request URI 'https://dmpaccess.dimep-ams.com
+[DEBUG] Status 404 | Hash: SHA256 Upper | Fields: username/password | Content-Type: application/json; charset=utf-8 | Body: {"Message":"No HTTP resource was found that matches the request URI 'https://dmpaccess.dimep-ams.com
+[DEBUG] Status 404 | Hash: SHA256 Upper | Fields: Username/Password | Content-Type: application/json; charset=utf-8 | Body: {"Message":"No HTTP resource was found that matches the request URI 'https://dmpaccess.dimep-ams.com
+[DEBUG] Status 404 | Hash: SHA256 Upper | Fields: usuario/senha | Content-Type: application/json; charset=utf-8 | Body: {"Message":"No HTTP resource was found that matches the request URI 'https://dmpaccess.dimep-ams.com
+[DEBUG] Status 404 | Hash: SHA256 Upper | Fields: Usuario/Senha | Content-Type: application/json; charset=utf-8 | Body: {"Message":"No HTTP resource was found that matches the request URI 'https://dmpaccess.dimep-ams.com
+[DEBUG] Status 404 | Hash: SHA256 Upper | Fields: login/senha | Content-Type: application/json; charset=utf-8 | Body: {"Message":"No HTTP resource was found that matches the request URI 'https://dmpaccess.dimep-ams.com
+[DEBUG] Status 404 | Hash: SHA256 Upper | Fields: user/password | Content-Type: application/json; charset=utf-8 | Body: {"Message":"No HTTP resource was found that matches the request URI 'https://dmpaccess.dimep-ams.com
+[DEBUG] Status 404 | Hash: SHA256 Upper | Fields: Login/Senha | Content-Type: application/json; charset=utf-8 | Body: {"Message":"No HTTP resource was found that matches the request URI 'https://dmpaccess.dimep-ams.com
+[DEBUG] Status 404 | Hash: SHA1 Lower | Fields: username/password | Content-Type: application/json; charset=utf-8 | Body: {"Message":"No HTTP resource was found that matches the request URI 'https://dmpaccess.dimep-ams.com
+[DEBUG] Status 404 | Hash: SHA1 Lower | Fields: Username/Password | Content-Type: application/json; charset=utf-8 | Body: {"Message":"No HTTP resource was found that matches the request URI 'https://dmpaccess.dimep-ams.com
+[DEBUG] Status 404 | Hash: SHA1 Lower | Fields: usuario/senha | Content-Type: application/json; charset=utf-8 | Body: {"Message":"No HTTP resource was found that matches the request URI 'https://dmpaccess.dimep-ams.com
+[DEBUG] Status 404 | Hash: SHA1 Lower | Fields: Usuario/Senha | Content-Type: application/json; charset=utf-8 | Body: {"Message":"No HTTP resource was found that matches the request URI 'https://dmpaccess.dimep-ams.com
+[DEBUG] Status 404 | Hash: SHA1 Lower | Fields: login/senha | Content-Type: application/json; charset=utf-8 | Body: {"Message":"No HTTP resource was found that matches the request URI 'https://dmpaccess.dimep-ams.com
+[DEBUG] Status 404 | Hash: SHA1 Lower | Fields: user/password | Content-Type: application/json; charset=utf-8 | Body: {"Message":"No HTTP resource was found that matches the request URI 'https://dmpaccess.dimep-ams.com
+[DEBUG] Status 404 | Hash: SHA1 Lower | Fields: Login/Senha | Content-Type: application/json; charset=utf-8 | Body: {"Message":"No HTTP resource was found that matches the request URI 'https://dmpaccess.dimep-ams.com
+[DEBUG] Status 404 | Hash: SHA1 Upper | Fields: username/password | Content-Type: application/json; charset=utf-8 | Body: {"Message":"No HTTP resource was found that matches the request URI 'https://dmpaccess.dimep-ams.com
+[DEBUG] Status 404 | Hash: SHA1 Upper | Fields: Username/Password | Content-Type: application/json; charset=utf-8 | Body: {"Message":"No HTTP resource was found that matches the request URI 'https://dmpaccess.dimep-ams.com
+[DEBUG] Status 404 | Hash: SHA1 Upper | Fields: usuario/senha | Content-Type: application/json; charset=utf-8 | Body: {"Message":"No HTTP resource was found that matches the request URI 'https://dmpaccess.dimep-ams.com
+[DEBUG] Status 404 | Hash: SHA1 Upper | Fields: Usuario/Senha | Content-Type: application/json; charset=utf-8 | Body: {"Message":"No HTTP resource was found that matches the request URI 'https://dmpaccess.dimep-ams.com
+[DEBUG] Status 404 | Hash: SHA1 Upper | Fields: login/senha | Content-Type: application/json; charset=utf-8 | Body: {"Message":"No HTTP resource was found that matches the request URI 'https://dmpaccess.dimep-ams.com
+[DEBUG] Status 404 | Hash: SHA1 Upper | Fields: user/password | Content-Type: application/json; charset=utf-8 | Body: {"Message":"No HTTP resource was found that matches the request URI 'https://dmpaccess.dimep-ams.com
+[DEBUG] Status 404 | Hash: SHA1 Upper | Fields: Login/Senha | Content-Type: application/json; charset=utf-8 | Body: {"Message":"No HTTP resource was found that matches the request URI 'https://dmpaccess.dimep-ams.com
+[DEBUG] Status 404 | Hash: Base64 | Fields: username/password | Content-Type: application/json; charset=utf-8 | Body: {"Message":"No HTTP resource was found that matches the request URI 'https://dmpaccess.dimep-ams.com
+[DEBUG] Status 404 | Hash: Base64 | Fields: Username/Password | Content-Type: application/json; charset=utf-8 | Body: {"Message":"No HTTP resource was found that matches the request URI 'https://dmpaccess.dimep-ams.com
+[DEBUG] Status 404 | Hash: Base64 | Fields: usuario/senha | Content-Type: application/json; charset=utf-8 | Body: {"Message":"No HTTP resource was found that matches the request URI 'https://dmpaccess.dimep-ams.com
+[DEBUG] Status 404 | Hash: Base64 | Fields: Usuario/Senha | Content-Type: application/json; charset=utf-8 | Body: {"Message":"No HTTP resource was found that matches the request URI 'https://dmpaccess.dimep-ams.com
+[DEBUG] Status 404 | Hash: Base64 | Fields: login/senha | Content-Type: application/json; charset=utf-8 | Body: {"Message":"No HTTP resource was found that matches the request URI 'https://dmpaccess.dimep-ams.com
+[DEBUG] Status 404 | Hash: Base64 | Fields: user/password | Content-Type: application/json; charset=utf-8 | Body: {"Message":"No HTTP resource was found that matches the request URI 'https://dmpaccess.dimep-ams.com
+[DEBUG] Status 404 | Hash: Base64 | Fields: Login/Senha | Content-Type: application/json; charset=utf-8 | Body: {"Message":"No HTTP resource was found that matches the request URI 'https://dmpaccess.dimep-ams.com
+
+Accurate Tester finished without finding direct JSON 200 response.

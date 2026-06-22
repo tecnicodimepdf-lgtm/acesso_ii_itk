@@ -55,6 +55,11 @@ export function initDb() {
       status TEXT DEFAULT 'idle',
       logs TEXT
     );
+
+    CREATE TABLE IF NOT EXISTS app_config (
+      chave TEXT PRIMARY KEY,
+      valor TEXT
+    );
   `);
 
   // Initialize sync_control row if it doesn't exist
@@ -62,4 +67,9 @@ export function initDb() {
   if (!row) {
     db.prepare("INSERT INTO controle_sincronizacao (ultimo_ponteiro, status) VALUES (0, 'idle')").run();
   }
+
+  // Pre-seed default configuration keys
+  db.prepare("INSERT OR IGNORE INTO app_config (chave, valor) VALUES ('POINTER_CNPJ', '')").run();
+  db.prepare("INSERT OR IGNORE INTO app_config (chave, valor) VALUES ('LOGON_USERNAME', 'VOGA PARK')").run();
+  db.prepare("INSERT OR IGNORE INTO app_config (chave, valor) VALUES ('LOGON_PASSWORD', 'Voga@123')").run();
 }
